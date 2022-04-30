@@ -1,0 +1,195 @@
+// colors theme
+
+$base_1: #155d27;
+$base_2: #2dc653;
+$base_3: #b7efc5;
+
+// colors extra
+
+$disable: #e6d5ce;
+$placeholder: #867f7d;
+$danger: #fd0100;
+$warn: #ffcc00;
+$agree: #05bc1b;
+$light: #fff;
+$dark: #000;
+
+// fonts
+
+$nunito: "Nunito", sans-serif;
+$open_suns: "Open Sans", sans-serif;
+$lh: 1.3rem;
+$fs: 16px;
+
+// default
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Open+Sans:wght@300;400;600;800&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	line-height: $lh;
+	background: $light;
+	box-sizing: border-box;
+	font-family: $nunito;
+}
+
+html {
+	font-size: $fs;
+}
+
+section {
+	padding: 0;
+	margin: 30px;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	object-fit: cover;
+	max-width: 100%;
+}
+
+::placeholder {
+	color: $placeholder;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+// titles
+
+.h {
+	font-weight: 800;
+	color: $base_1;
+}
+
+.h1 {
+	font-size: 2.6rem;
+}
+
+.h2 {
+	font-size: 2.2rem;
+}
+
+.h3 {
+	font-size: 1.9rem;
+}
+
+.h4 {
+	font-size: 1.6rem;
+}
+
+.h5 {
+	font-size: 1.3rem;
+}
+
+.h6 {
+	font-size: 1rem;
+}
+
+// grid
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 2rem;
+}
+
+.cell {
+	display: flex;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: 100%;
+}
+
+.cell-1 {
+	width: 8.333%;
+}
+
+.cell-2 {
+	width: 16.666%;
+}
+
+.cell-3 {
+	width: 25%;
+}
+
+.cell-4 {
+	width: 33.333%;
+}
+
+.cell-5 {
+	width: 41.666%;
+}
+
+.cell-5 {
+	width: 41.666%;
+}
+
+.cell-6 {
+	width: 50%;
+}
+
+.cell-7 {
+	width: 58.333%;
+}
+
+.cell-8 {
+	width: 66.666%;
+}
+
+.cell-10 {
+	width: 83.333%;
+}
+
+.cell-11 {
+	width: 91.666%;
+}
+
+.cell-12 {
+	width: 100%;
+}
+
+// buttons
+
+.btn {
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 5px;
+	position: relative;
+	transition: 0.3s all;
+	outline: none;
+}
+
+.btn__agree {
+	background-color: $agree;
+}
+
+.__warn {
+	background-color: $warn;
+}
+
+.__danger {
+	background-color: $danger;
+}
